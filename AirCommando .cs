@@ -8,6 +8,10 @@
             
         }
 
+        public override void Attack()
+        {
+            Console.WriteLine("Airborne soldier attacks");
+        }
         private string Falling = null;
         public void Parachuting()
         {

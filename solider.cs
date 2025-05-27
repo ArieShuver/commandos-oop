@@ -36,7 +36,7 @@ namespace Commandos.models
         }
         public virtual void Attack()
         {
-            Console.WriteLine(Name,"Commando soldier attacks");
+            Console.WriteLine(Name +" "+"Commando soldier attacks");
         }
         public void SayName(string commanderRank)
         {
@@ -47,6 +47,10 @@ namespace Commandos.models
             else if (commanderRank == "COLONEL")
             {
                 Console.WriteLine(CodeName);
+            }
+            else
+            {
+                Console.WriteLine("You do not have access");
             }
         }   
     }
