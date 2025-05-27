@@ -34,7 +34,7 @@ namespace Commandos.models
             Console.WriteLine("th solider is will hide");
             Status = "hide";
         }
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine(Name,"Commando soldier attacks");
         }
