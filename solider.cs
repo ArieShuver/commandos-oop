@@ -13,7 +13,7 @@ namespace Commandos.models
         private string Name;
         private string CodeName {  get; set; }
         private string[] Tools = new string[5];
-        private string Status;
+        public string Status;
 
         public Solider(string name, string codeName)
         {
@@ -33,6 +33,10 @@ namespace Commandos.models
         {
             Console.WriteLine("th solider is will hide");
             Status = "hide";
+        }
+        public void Attack()
+        {
+            Console.WriteLine(Name,"Commando soldier attacks");
         }
         public void SayName(string commanderRank)
         {

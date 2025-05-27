@@ -9,8 +9,11 @@ namespace Commandos
     {
         static void Main(string[] args)
         {
-            Solider s1 = new Solider("arie","ss");
-            s1.SayName("GENERAL");
+        //    Solider s1 = new Solider("arie","ss");
+        //    s1.SayName("GENERAL");
+        AirCommando x = new AirCommando("ss","sd");
+            x.SayName("GENERAL");
+            Console.WriteLine(x.Status);
         }
     }
 }
