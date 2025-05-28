@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Commandos.models
 {
-    public class Enemy_factory
+    static class Enemy_factory
     {
     static List<Enemies> Listenemies = new List<Enemies>();
 
       
-        static void Factory(string name)
+        static public void Factory(string name)
         {
             Listenemies.Add(new Enemies(name));
         }
