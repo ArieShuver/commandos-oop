@@ -10,9 +10,9 @@ namespace Commandos.models
     public class Enemy_factory
     {
     static List<Enemies> Listenemies = new List<Enemies>();
-        
 
-        public static void Factory(string name)
+      
+        static void Factory(string name)
         {
             Listenemies.Add(new Enemies(name));
         }

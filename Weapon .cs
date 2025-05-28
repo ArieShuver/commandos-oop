@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Commandos.models
 {
-    internal class Weapon
+    public class Weapon
     {
         private string NameWeapon { get; set; }
         private string Maker { get; set; }
 
         private int NumBalls { get; set; }
 
-        public Weapon()
+        public Weapon(string name , string maker ,int numBalss)
         {
-            NameWeapon = "";
+            NameWeapon = name;
             Maker = "";
             NumBalls = 0;
 
