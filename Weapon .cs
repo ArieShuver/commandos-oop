@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Commandos.models
 {
-    internal class Weapon
+    public class Weapon
     {
         private string NameWeapon { get; set; }
         private string Maker { get; set; }
@@ -17,7 +17,11 @@ namespace Commandos.models
         {
             NameWeapon = name;
             Maker = maker;
-            //NumBalls = 0;
+
+        public Weapon(string name , string maker ,int numBalss)
+        {
+            NameWeapon = name;
+            Maker = "";
 
         }
         public void Shoot()

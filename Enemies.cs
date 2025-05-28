@@ -18,9 +18,18 @@ namespace Commandos.models
             Life = 100;
             Status = "live";
         }
-        public void Delcaration()
+        static void Delcaration()
         {
             Console.WriteLine("i am an enemy");
         }
+        public void ChangeStatus()
+        {
+            Status = "ded";
+        }
+        public void PrintName()
+        {
+            Console.WriteLine(Name);
+        }
     }
+
 }
