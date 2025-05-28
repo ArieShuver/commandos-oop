@@ -13,17 +13,21 @@ namespace Commandos.models
 
         private int NumBalls { get; set; }
 
+        public Weapon(string name ,string maker)
+        {
+            NameWeapon = name;
+            Maker = maker;
+
         public Weapon(string name , string maker ,int numBalss)
         {
             NameWeapon = name;
             Maker = "";
-            NumBalls = 0;
 
         }
         public void Shoot()
         {
             Console.WriteLine("A shot was fired");
-            NumBalls -= 1;
+            //NumBalls -= 1;
         }
     }
 }
